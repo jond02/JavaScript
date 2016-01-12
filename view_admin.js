@@ -98,7 +98,7 @@ $(function() {
 					}
 				});
 				
-				$.get("http://" + sgDir + "/php/viewAdminTemplateAdd.php?name=" + tempName, function(data) {
+				$.get("http://" + sgDir + "/php/....php?name=" + tempName, function(data) {
 					if (isNaN(data)) {
 						alert("There's been an error. Please reload page and try again.");
 					} else {
@@ -133,7 +133,7 @@ $(function() {
 
 				if (confirm('Delete ' + tempName + '?')) {
 
-					$.get("http://" + sgDir + "/php/viewAdminTemplateDelete.php?id=" + tempId, function(data) {
+					$.get("http://" + sgDir + "/php/....php?id=" + tempId, function(data) {
 						if (data === 'false') {
 							alert("There's been an error. Please reload page and try again.");
 						}
